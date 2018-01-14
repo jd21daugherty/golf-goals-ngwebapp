@@ -1,4 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './app.routing';
 import { NgModule } from '@angular/core';
 import { SharedModule } from './shared.module';
 
@@ -13,6 +15,7 @@ import { ServicesModule } from './services/services.module';
     AppComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     SharedModule,
     ComponentsModule,

@@ -12,4 +12,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  runMe(string: string){
+    console.log(string);
+  }
+
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatHorizontalStepper, MatVerticalStepper } from '@angular/material';
 
-import {FormBuilder, FormGroup, Validators, Form} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators, Form, FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-course-picker',
@@ -15,6 +15,9 @@ export class CoursePickerComponent implements OnInit {
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
   forthFormGroup: FormGroup;
+
+  statesControl: FormControl = new FormControl();
+  states: ['Oklahoma', 'Texas', 'Kansas']
 
   constructor(
     private formBuilder: FormBuilder

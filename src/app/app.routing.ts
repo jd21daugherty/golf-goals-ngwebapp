@@ -1,5 +1,7 @@
 import { Routes } from "@angular/router";
 
-export const appRoutes: Routes = [
+import { StartRoundComponent } from "./pages/start-round/start-round.component";
 
+export const appRoutes: Routes = [
+    {path: 'start-round', component: StartRoundComponent }
 ]

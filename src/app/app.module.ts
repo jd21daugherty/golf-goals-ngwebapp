@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { appRoutes } from './app.routing';
 import { NgModule } from '@angular/core';
 import { SharedModule } from './shared.module';
@@ -17,6 +19,7 @@ import { ServicesModule } from './services/services.module';
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    BrowserAnimationsModule,
     SharedModule,
     ComponentsModule,
     PagesModule,

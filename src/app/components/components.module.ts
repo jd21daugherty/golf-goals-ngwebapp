@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SharedModule } from '../shared.module';
@@ -11,6 +11,7 @@ import { SharedModule } from '../shared.module';
   exports: [
     NavbarComponent
   ],
-  declarations: [NavbarComponent]
+  declarations: [NavbarComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ComponentsModule { }

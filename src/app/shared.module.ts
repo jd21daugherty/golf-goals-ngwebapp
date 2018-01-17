@@ -8,6 +8,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatButtonModule } from '@angular/material/button';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     MatMenuModule,
     MatStepperModule,
     MatAutocompleteModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   exports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     MatMenuModule,
     MatStepperModule,
     MatAutocompleteModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   declarations: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

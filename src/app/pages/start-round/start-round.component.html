@@ -1,2 +1,48 @@
 
-<app-course-picker></app-course-picker>
+<mat-horizontal-stepper [linear]="isLinear">
+    
+      <mat-step [stepControl]="firstFormGroup">
+          <ng-template matStepLabel>Choose a Course</ng-template>
+          <app-course-picker></app-course-picker>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>  
+      </mat-step>
+    
+      <mat-step [stepControl]="secondFormGroup">
+          <ng-template matStepLabel>Select your Tee</ng-template>
+    
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-step>
+    
+      <mat-step [stepControl]="thirdFormGroup" optional>
+          <ng-template matStepLabel>Set a Number of Holes</ng-template>
+    
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+      </mat-step>
+    
+      <mat-step [stepControl]="forthFormGroup" optional>
+          <ng-template matStepLabel>Set your Goals</ng-template>
+    
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+      </mat-step>
+    
+      <mat-step>
+        <ng-template matStepLabel>Start Round!</ng-template>
+        Start
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+        </div>
+      </mat-step>
+    
+    </mat-horizontal-stepper>
+    

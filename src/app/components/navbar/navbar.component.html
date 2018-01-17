@@ -1,5 +1,5 @@
-<button mat-button>Home</button>
-<button mat-button>Start a Round</button>
+<button mat-button [routerLink]="['/home']">Home</button>
+<button mat-button [routerLink]="['/start-round']">Start a Round</button>
 
 <button mat-button [matMenuTriggerFor]="menu">Sign In</button>
 <mat-menu #menu="matMenu">

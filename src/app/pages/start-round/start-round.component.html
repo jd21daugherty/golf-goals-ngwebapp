@@ -3,7 +3,16 @@
     
       <mat-step [stepControl]="firstFormGroup">
           <ng-template matStepLabel>Choose a Course</ng-template>
-          <app-course-picker></app-course-picker>
+          <div class="col-md-12">
+          <div class="row">
+          <div class="col-md-6">
+              <app-course-picker></app-course-picker>
+          </div>
+          <div class="col-md-6">
+              maps area
+          </div>
+        </div>
+        </div>
         <div>
           <button mat-button matStepperNext>Next</button>
         </div>  

@@ -6,6 +6,7 @@ import { StartRoundComponent } from './start-round/start-round.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { RoundEntryComponent } from './round-entry/round-entry.component';
 import { CoursePickerComponent } from './start-round/components/course-picker/course-picker.component';
+import { PracticeEntryComponent } from './practice-entry/practice-entry.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { CoursePickerComponent } from './start-round/components/course-picker/co
     StartRoundComponent, 
     SignInComponent, 
     RoundEntryComponent, 
-    CoursePickerComponent],
+    CoursePickerComponent, PracticeEntryComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PagesModule { }

@@ -13,16 +13,18 @@ export class PracticeEntryComponent implements AfterViewInit {
   canvas: any;
   ctx: any;
 
+  timePeriods = ['2 weeks', '1 month', '3 months', '6 months', '1 year'];
+
   ngAfterViewInit() {
     this.canvas = document.getElementById('myChart');
     this.ctx = this.canvas.getContext('2d');
-    let myChart = new Chart(this.ctx, {
+    var myChart = new Chart(this.ctx, {
       type: 'bar',
       data: {
           labels: ['Driver', 'Irons', 'Short Game', 'Wedges', 'Putting'],
           datasets: [{
               label: 'Golf Shots',
-              data: [3,2,3,4,5],
+              data: [30, 10, 20, 15, 25],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -39,7 +41,10 @@ export class PracticeEntryComponent implements AfterViewInit {
             display: true,
             ticks: {
               min: 0,
-              max: 10
+              max: 100,
+              callback: (value) => {
+                  return value + '%';
+              }
             }
           }]
         }
@@ -47,7 +52,11 @@ export class PracticeEntryComponent implements AfterViewInit {
     });
   }
 
-  
+  changeTimePeriod(time: string): void {
+    var rootMenuButton = document.getElementById('btn-root-menu');
+    rootMenuButton.innerHTML = time;
+  }
+
 }
 
 

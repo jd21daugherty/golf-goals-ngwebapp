@@ -1,5 +1,27 @@
-<h1>Practice Chart</h1>
+<div id="chart-controls" class="container-fluid col-md-4 vcenter col-centered">
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>
+                    <button mat-button [matMenuTriggerFor]="menu" id="btn-root-menu">{{ timePeriods[0] }}</button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item id="menu" *ngFor="let time of timePeriods"
+                                    [value]="time"
+                                    (click)="changeTimePeriod(time)">
+                                    {{ time }}
+                                </button>
+                        </mat-menu>   
+                </td>
+                <td id="td-right">
+                    <button mat-button id="btn-enter-practice">
+                        Enter Practice
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-<div>
-<canvas id="myChart" width="400" height="400"></canvas>
+<div class="container-fluid col-md-4 col-centered">
+    <canvas id="myChart" height="300" width="450"></canvas>
 </div>

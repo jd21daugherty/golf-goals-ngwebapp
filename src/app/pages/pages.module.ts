@@ -1,6 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared.module';
+import { ComponentsModule } from '../components/components.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -10,7 +11,6 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { RoundEntryComponent } from './round-entry/round-entry.component';
 import { CoursePickerComponent } from './start-round/components/course-picker/course-picker.component';
 import { PracticeEntryComponent } from './practice-entry/practice-entry.component';
-import { JumbotronComponent } from '../pages/home-page/jumbotron/jumbotron.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 
@@ -19,7 +19,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     CommonModule,
     SharedModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ComponentsModule
   ],
   declarations: 
   [HomePageComponent, 
@@ -28,7 +29,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     RoundEntryComponent, 
     CoursePickerComponent, 
     PracticeEntryComponent,
-    JumbotronComponent,
     SignUpComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

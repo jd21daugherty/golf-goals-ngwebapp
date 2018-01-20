@@ -12,7 +12,8 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
     RouterModule
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    JumbotronComponent
   ],
   declarations: [NavbarComponent, JumbotronComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

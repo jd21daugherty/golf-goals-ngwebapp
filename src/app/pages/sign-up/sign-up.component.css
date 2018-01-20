@@ -7,6 +7,7 @@
     margin: 0 auto;
 }
 
-#sign-up-button {
+#sign-in-button {
+    white-space: normal;
     font-size: 11px;
 }

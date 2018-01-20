@@ -1,0 +1,16 @@
+.jumbotron {
+    text-align: center;
+}
+
+#btn-sign-up {
+    margin-top: 10px;
+}
+
+#sign-in-up {
+    text-align: center;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

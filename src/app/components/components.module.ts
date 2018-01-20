@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SharedModule } from '../shared.module';
 import { RouterModule } from '@angular/router';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import { RouterModule } from '@angular/router';
   exports: [
     NavbarComponent
   ],
-  declarations: [NavbarComponent],
+  declarations: [NavbarComponent, JumbotronComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ComponentsModule { }

@@ -13,6 +13,7 @@ import { CoursePickerComponent } from './start-round/components/course-picker/co
 import { PracticeEntryComponent } from './practice-entry/practice-entry.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { PracticeEntryModalComponent } from './practice-entry/practice-entry-modal/practice-entry-modal.component';
+import { PracticeTableComponent } from './practice-entry/practice-entry-modal/practice-table/practice-table.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { PracticeEntryModalComponent } from './practice-entry/practice-entry-mod
     CoursePickerComponent, 
     PracticeEntryComponent,
     SignUpComponent,
-    PracticeEntryModalComponent],
+    PracticeEntryModalComponent,
+    PracticeTableComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PagesModule { }

@@ -46,6 +46,12 @@ export class PracticeEntryComponent implements AfterViewInit {
                   return value + '%';
               }
             }
+          }],
+          xAxes: [{
+            scaleLabel: {
+              display: true,
+              labelString: '2 weeks.'
+            }
           }]
         }
       }

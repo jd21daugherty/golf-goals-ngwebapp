@@ -12,6 +12,7 @@ import { RoundEntryComponent } from './round-entry/round-entry.component';
 import { CoursePickerComponent } from './start-round/components/course-picker/course-picker.component';
 import { PracticeEntryComponent } from './practice-entry/practice-entry.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { PracticeEntryModalComponent } from './practice-entry/practice-entry-modal/practice-entry-modal.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     RoundEntryComponent, 
     CoursePickerComponent, 
     PracticeEntryComponent,
-    SignUpComponent],
+    SignUpComponent,
+    PracticeEntryModalComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PagesModule { }

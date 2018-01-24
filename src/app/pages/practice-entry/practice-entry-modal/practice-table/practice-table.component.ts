@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDatepickerInputEvent, MatFormFieldControl } from '@angular/material';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-practice-table',
@@ -13,7 +15,11 @@ export class PracticeTableComponent implements OnInit {
 
   tableColumns: Array<number> = [1,2,3,4,5];
 
-  constructor() { }
+  inputDate: FormControl;
+
+  constructor() { 
+    this.inputDate = new FormControl(new Date());
+  }
 
   ngOnInit() {
   }

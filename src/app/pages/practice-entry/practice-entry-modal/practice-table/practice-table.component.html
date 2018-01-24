@@ -11,7 +11,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>Hours</td>
+        <td class="right-aligned">Hours</td>
         <td *ngFor="let column of tableColumns">
           <form class="form1">
             <mat-form-field class="table-input">
@@ -21,7 +21,7 @@
         </td>
       </tr>
       <tr>
-        <td>Minutes</td>
+        <td class="right-aligned">Minutes</td>
         <td *ngFor="let column of tableColumns">
           <form class="form1">
             <mat-form-field class="table-input">
@@ -31,30 +31,21 @@
         </td>
       </tr>
       <tr>
-        <td>Date</td>
+        <td class="right-aligned">Date</td>
         <td *ngFor="let picker of datepickerFormNames">
             <form class="form1">
               <mat-form-field class="table-input">
-                <input matInput [matDatepicker]="picker">
-              <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
-              <mat-datepicker #picker></mat-datepicker>
+                <input matInput [formControl]="inputDate" [matDatepicker]="picker">
+                <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>      
             </form>
         </td>            
       </tr>
-      <!--<tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-          <form class="form1">
-            <mat-form-filed class="table-input">
-              <button mat-button type="submit">Add Hours</button>
-            </mat-form-filed>
-          </form>
-        </td>
-        <td></td>
-        <td></td>
-      </tr>-->
   </tbody>
 </table>
+
+
+<div class="checkboxes">
+  <mat-checkbox>Same Date all Times</mat-checkbox>
+</div>

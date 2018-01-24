@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { MatMenuModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatStepperModule } from '@angular/material/stepper';
-import { MatButtonModule, MatNativeDateModule } from '@angular/material';
+import { MatButtonModule, MatNativeDateModule, MatCheckboxModule } from '@angular/material';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
@@ -27,7 +27,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatCheckboxModule
   ],
   declarations: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

@@ -19,3 +19,7 @@ td {
 .table-input {
     width: 100%;
 }
+
+.right-aligned {
+    text-align: right;
+}

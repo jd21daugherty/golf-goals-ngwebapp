@@ -14,9 +14,6 @@ export class PracticeTableComponent implements OnInit {
                                         'picker5'];
 
   tableColumns: Array<number> = [-2,1,4,7,10];
-  hoursTabIndex: Array<number>;
-  minutesTabIndex: Array<number>;
-  datesTabIndex: Array<number>;
 
   inputDate: FormControl;
 

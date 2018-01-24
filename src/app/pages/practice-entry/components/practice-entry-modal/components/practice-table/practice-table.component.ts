@@ -13,7 +13,10 @@ export class PracticeTableComponent implements OnInit {
                                         'picker3', 'picker4',
                                         'picker5'];
 
-  tableColumns: Array<number> = [1,2,3,4,5];
+  tableColumns: Array<number> = [-2,1,4,7,10];
+  hoursTabIndex: Array<number>;
+  minutesTabIndex: Array<number>;
+  datesTabIndex: Array<number>;
 
   inputDate: FormControl;
 

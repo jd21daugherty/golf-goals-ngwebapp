@@ -12,8 +12,8 @@ import { RoundEntryComponent } from './round-entry/round-entry.component';
 import { CoursePickerComponent } from './start-round/components/course-picker/course-picker.component';
 import { PracticeEntryComponent } from './practice-entry/practice-entry.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { PracticeEntryModalComponent } from './practice-entry/practice-entry-modal/practice-entry-modal.component';
-import { PracticeTableComponent } from './practice-entry/practice-entry-modal/practice-table/practice-table.component';
+import { PracticeEntryModalComponent } from './practice-entry/components/practice-entry-modal/practice-entry-modal.component';
+import { PracticeTableComponent } from './practice-entry/components/practice-entry-modal/components/practice-table/practice-table.component';
 
 
 @NgModule({

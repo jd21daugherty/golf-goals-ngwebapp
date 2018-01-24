@@ -15,7 +15,7 @@
         <td *ngFor="let column of tableColumns">
           <form class="form1">
             <mat-form-field class="table-input">
-              <input matInput placeholder="Hours">
+              <input matInput placeholder="Hours" tabindex="{{column + 3}}">
             </mat-form-field>
           </form>
         </td>
@@ -25,17 +25,17 @@
         <td *ngFor="let column of tableColumns">
           <form class="form1">
             <mat-form-field class="table-input">
-              <input matInput placeholder="Minutes">
+              <input matInput placeholder="Minutes" tabindex="{{column + 4}}">
             </mat-form-field>
           </form>
         </td>
       </tr>
       <tr>
         <td class="right-aligned">Date</td>
-        <td *ngFor="let picker of datepickerFormNames">
+        <td *ngFor="let picker of datepickerFormNames; let i = index">
             <form class="form1">
               <mat-form-field class="table-input">
-                <input matInput [formControl]="inputDate" [matDatepicker]="picker">
+                <input matInput [formControl]="inputDate" [matDatepicker]="picker" tabindex="{{(3*i) + 3}}">
                 <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>      
@@ -45,7 +45,7 @@
   </tbody>
 </table>
 
-
 <div class="checkboxes">
   <mat-checkbox>Same Date all Times</mat-checkbox>
 </div>
+

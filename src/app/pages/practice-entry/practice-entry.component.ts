@@ -50,7 +50,7 @@ export class PracticeEntryComponent implements AfterViewInit {
           xAxes: [{
             scaleLabel: {
               display: true,
-              labelString: '2 weeks.'
+              labelString: '2 weeks'
             }
           }]
         }
